@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/KyleAMathews/gatsby-plugin-vanilla-extract/issues"
   },
-  "homepage": "https://github.com/KyleAMathews/gatsby-plugin-vanilla-extract#readme"
+  "homepage": "https://github.com/KyleAMathews/gatsby-plugin-vanilla-extract#readme",
+  "dependencies": {
+    "@vanilla-extract/babel-plugin": "^0.1.0",
+    "@vanilla-extract/css": "^0.1.0",
+    "@vanilla-extract/webpack-plugin": "^0.1.0"
+  }
 }
