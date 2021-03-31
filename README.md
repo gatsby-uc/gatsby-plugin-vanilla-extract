@@ -25,14 +25,14 @@ Simple example.
 ```tsx
 import * as React from "react";
 
-import { className } from "./index.css.ts";
+import { className } from "../styles/index.css.ts";
 
 export default function Index() {
   return <div className={className}>Pizza</div>;
 }
 ```
 
-`src/pages/index.css.ts`
+`src/styles/index.css.ts`
 
 ```ts
 import { style } from "@vanilla-extract/css";
