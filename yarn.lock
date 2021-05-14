@@ -208,10 +208,24 @@
     "@babel/template" "^7.12.13"
     find-up "^5.0.0"
 
-"@vanilla-extract/css@^0.4.0", "@vanilla-extract/css@^0.4.3":
+"@vanilla-extract/css@^0.4.0":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-0.4.3.tgz#01d6a7a106471d739cea885b940e007ba34a1766"
   integrity sha512-EuZZbt+BW+WTRbhFOqbY6FY5X4/lS8D8kGdTchZYCUUKFms4N2RRcqmOAiE1yEZHwE3HJpePF2wKC4qnXumFKQ==
+  dependencies:
+    "@emotion/hash" "^0.8.0"
+    "@vanilla-extract/private" "^0.1.2"
+    chalk "^4.1.1"
+    css-selector-parser "^1.4.1"
+    cssesc "^3.0.0"
+    csstype "^3.0.7"
+    dedent "^0.7.0"
+    deep-object-diff "^1.1.0"
+
+"@vanilla-extract/css@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-0.5.0.tgz#b8c74c13c39d008d977a7baaa7af2ad72bc05857"
+  integrity sha512-gvJlmzG+6ezv8B1KiTC6R6JBCzgViACjqVc1vsogVBv8vvB6X/trmd/0h7frAqC3KSqhbfXyJApQzbeP3SZ57w==
   dependencies:
     "@emotion/hash" "^0.8.0"
     "@vanilla-extract/private" "^0.1.2"
