@@ -6,10 +6,10 @@ exports.onCreateBabelConfig = ({ actions }, pluginOptions) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions, stage }) => {
+exports.onCreateWebpackConfig = ({ actions, stage }, {plugins, ...options}) => {
   if (stage === "develop" || stage === "build-javascript") {
     actions.setWebpackConfig({
-      plugins: [new VanillaExtractPlugin()],
+      plugins: [new VanillaExtractPlugin(options)],
     });
   }
 };
