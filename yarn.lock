@@ -208,7 +208,7 @@
     "@babel/template" "^7.12.13"
     find-up "^5.0.0"
 
-"@vanilla-extract/css@^0.4.0", "@vanilla-extract/css@^0.4.3":
+"@vanilla-extract/css@^0.4.0":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-0.4.3.tgz#01d6a7a106471d739cea885b940e007ba34a1766"
   integrity sha512-EuZZbt+BW+WTRbhFOqbY6FY5X4/lS8D8kGdTchZYCUUKFms4N2RRcqmOAiE1yEZHwE3HJpePF2wKC4qnXumFKQ==
@@ -222,10 +222,29 @@
     dedent "^0.7.0"
     deep-object-diff "^1.1.0"
 
+"@vanilla-extract/css@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.0.0.tgz#6cedddd6243aa7e99d6b6920553a086b19dcd84a"
+  integrity sha512-o52t6Bj1LeEDfdVW6ZIzmHHTQSiq/D7py3yJgZZNzbUIQBNfyByK6W73ITDR5RhhywZLkX8/GVy0V++B+bOZ3A==
+  dependencies:
+    "@emotion/hash" "^0.8.0"
+    "@vanilla-extract/private" "^1.0.0"
+    chalk "^4.1.1"
+    css-selector-parser "^1.4.1"
+    cssesc "^3.0.0"
+    csstype "^3.0.7"
+    dedent "^0.7.0"
+    deep-object-diff "^1.1.0"
+
 "@vanilla-extract/private@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-0.1.2.tgz#79cb16243764c5f51b99e0a7ed137e6c5e06223e"
   integrity sha512-LuaCxlU4BlsSlK53QQABxo53TqWFiQyjXwDCz+5tpaChhMHrmJ5/XVFQVH3zD03HATfAJcmv8WqAQOZnF0FmGg==
+
+"@vanilla-extract/private@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.0.tgz#10711c4481decd2f9a2f19cb85dcee60eff3f75c"
+  integrity sha512-NS/Dqenj1Fd9fX1qWz4nFP6hefbTJIpQYLgKQsJBQonJ/E0QYiYtTJ1oeUh7vpoW0ojVuuRdA1URbKb7MCJ4JA==
 
 "@vanilla-extract/webpack-plugin@^0.3.0":
   version "0.3.0"

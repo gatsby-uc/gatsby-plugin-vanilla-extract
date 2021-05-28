@@ -22,7 +22,7 @@
   "homepage": "https://github.com/KyleAMathews/gatsby-plugin-vanilla-extract#readme",
   "dependencies": {
     "@vanilla-extract/babel-plugin": "^0.4.0",
-    "@vanilla-extract/css": "^0.4.3",
+    "@vanilla-extract/css": "^1.0.0",
     "@vanilla-extract/webpack-plugin": "^0.3.0"
   }
 }
