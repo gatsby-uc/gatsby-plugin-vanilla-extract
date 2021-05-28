@@ -199,22 +199,22 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@vanilla-extract/babel-plugin@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin/-/babel-plugin-0.4.0.tgz#1f729b0695176a885a78ccfc46738757748370e8"
-  integrity sha512-nXncjk2d12gKMtNrOJx10J7xfg/pGW+z38PHl3l+Mfd4U4b//emAZSSeEXX98ejdF5jj2svU7HyN+66AAj0urg==
+"@vanilla-extract/babel-plugin@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin/-/babel-plugin-1.0.0.tgz#bdf8e13f40f761680d47001e61856869b1143b90"
+  integrity sha512-UBbycdnKDvpWVOv1j6F8Iod+FhOW2W4Fv+GVT3D/Woq2SleO2JSv/OEDoyerkN1mcCkJCVPuXnVYEdeRdxZgeQ==
   dependencies:
     "@babel/core" "^7.13.10"
     "@babel/template" "^7.12.13"
-    find-up "^5.0.0"
+    "@vanilla-extract/integration" "^1.0.0"
 
-"@vanilla-extract/css@^0.4.0", "@vanilla-extract/css@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-0.4.3.tgz#01d6a7a106471d739cea885b940e007ba34a1766"
-  integrity sha512-EuZZbt+BW+WTRbhFOqbY6FY5X4/lS8D8kGdTchZYCUUKFms4N2RRcqmOAiE1yEZHwE3HJpePF2wKC4qnXumFKQ==
+"@vanilla-extract/css@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.0.0.tgz#6cedddd6243aa7e99d6b6920553a086b19dcd84a"
+  integrity sha512-o52t6Bj1LeEDfdVW6ZIzmHHTQSiq/D7py3yJgZZNzbUIQBNfyByK6W73ITDR5RhhywZLkX8/GVy0V++B+bOZ3A==
   dependencies:
     "@emotion/hash" "^0.8.0"
-    "@vanilla-extract/private" "^0.1.2"
+    "@vanilla-extract/private" "^1.0.0"
     chalk "^4.1.1"
     css-selector-parser "^1.4.1"
     cssesc "^3.0.0"
@@ -222,22 +222,33 @@
     dedent "^0.7.0"
     deep-object-diff "^1.1.0"
 
-"@vanilla-extract/private@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-0.1.2.tgz#79cb16243764c5f51b99e0a7ed137e6c5e06223e"
-  integrity sha512-LuaCxlU4BlsSlK53QQABxo53TqWFiQyjXwDCz+5tpaChhMHrmJ5/XVFQVH3zD03HATfAJcmv8WqAQOZnF0FmGg==
-
-"@vanilla-extract/webpack-plugin@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-0.3.0.tgz#0bf8dc74ed62f3ac44dd04f5a8d79884deb4c846"
-  integrity sha512-znDK85C5wE6TUwMkG8ZUBehZUGA0AKRRulNGynfqx86W7OQCvEV2nr0Vq8uhR4aDwQX1d647exDd26FBpl7YLQ==
+"@vanilla-extract/integration@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-1.0.0.tgz#c97ed3b57cdf7312371650b32c83762cfc3c1936"
+  integrity sha512-NPe+DPKqjg9xBoJA8GUX/Op4hljfjg0IqIQeomDTw9ARn3KhPynJ7bj/Y0BID/oejNmEo2jtlRq9j//pXOzKRA==
   dependencies:
-    "@vanilla-extract/css" "^0.4.0"
-    chalk "^4.1.0"
-    debug "^4.3.1"
+    "@vanilla-extract/css" "^1.0.0"
+    chalk "^4.1.1"
     dedent "^0.7.0"
+    esbuild "^0.11.16"
     eval "^0.1.6"
+    find-up "^5.0.0"
     javascript-stringify "^2.0.1"
+    lodash "^4.17.21"
+
+"@vanilla-extract/private@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.0.tgz#10711c4481decd2f9a2f19cb85dcee60eff3f75c"
+  integrity sha512-NS/Dqenj1Fd9fX1qWz4nFP6hefbTJIpQYLgKQsJBQonJ/E0QYiYtTJ1oeUh7vpoW0ojVuuRdA1URbKb7MCJ4JA==
+
+"@vanilla-extract/webpack-plugin@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-1.0.0.tgz#c809447ac526c6b964be6ccd9fb133939e447cca"
+  integrity sha512-KUanRvmFzzfAUey8jyUH3FFSRCmxmbT9GJxjT8M5InTxj7Jprkm1xl+hTpSx1r69J4rI94zYXYRvWHcWl/L2ow==
+  dependencies:
+    "@vanilla-extract/integration" "^1.0.0"
+    chalk "^4.1.1"
+    debug "^4.3.1"
     loader-utils "^2.0.0"
     lodash "^4.17.21"
     virtual-resource-loader "^1.0.0"
@@ -285,14 +296,6 @@ chalk@^2.0.0:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
-
-chalk@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
-  integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
-  dependencies:
-    ansi-styles "^4.1.0"
-    supports-color "^7.1.0"
 
 chalk@^4.1.1:
   version "4.1.1"
@@ -379,6 +382,11 @@ emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
+
+esbuild@^0.11.16:
+  version "0.11.23"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.11.23.tgz#c42534f632e165120671d64db67883634333b4b8"
+  integrity sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==
 
 escalade@^3.1.1:
   version "3.1.1"
