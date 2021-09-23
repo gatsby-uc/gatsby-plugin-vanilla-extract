@@ -7,9 +7,13 @@ exports.onCreateBabelConfig = ({ actions }, pluginOptions) => {
 };
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
-  if (stage === "develop" || stage === "build-javascript") {
+  if (
+    stage === "develop" ||
+    stage === "build-javascript" ||
+    stage === "build-html"
+  ) {
     actions.setWebpackConfig({
-      plugins: [new VanillaExtractPlugin()],
+      plugins: [new VanillaExtractPlugin()]
     });
   }
 };
